@@ -1,0 +1,253 @@
+body{
+    background: #f7f7f7;
+color: #000;
+font-family: 'Archivo Black', sans-serif;
+}
+
+article, header {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+    
+
+img {display:block;
+padding: 0;
+max-width: 100%;
+}
+
+/*---- styling typography----*/
+
+h1, h2 {color: #EDC101;
+font family: 'Fugaz One', sans-serif;
+}
+
+p, blockquote {line-height: 1.5;
+}
+
+h1{
+    font-size: 3.247rem;
+    color:#000;
+    font-weight: normal;
+    margin: 2rem 0 1rem 0;
+}
+h2{ 
+    font-size: 1.802rem;
+    margin: 2rem 0 1rem 0;
+}
+
+blockquote{
+    font-size: 1.602rem;
+    font-style: italic;
+    color: #EDC101;
+    margin-bottom: 4rem;
+}
+cite{
+    font-size: 1.266rem;
+}
+
+header h2 {
+    font-size: 2.281rem;
+    font-style: oblique;
+    font-family: 'Fugaz One', sans-serif;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+header p{
+    font-size: 1.4rem;
+    margin-bottom: 6rem;
+}
+
+/*----styling links----*/
+
+a {
+    color: #EDC101;
+
+}
+
+a:hover {
+    color: #000;
+    border-bottom: 1px dotted;
+}
+
+/*--- SET UP A RSPONSIVE NAV --*/
+
+.responsivenav {
+    background: #000;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+
+#logo {     
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    font-family: 'Fugaz One', sans-serif;
+    padding-left: 32px; }
+
+nav {display: flex;
+    padding: 1rem 0;
+    font-size: 0.8rem;}
+
+nav ul {
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        list-style-type: none; 
+        padding-right: 30px;
+        }
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0 5px;}
+
+nav a:hover {
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;}
+
+    
+/*-- STYLING BIBLIOGRAPHY SECTION --*/
+.dark {
+    background: #EDC101;
+    color: #000;
+    padding: 4rem 0 4rem 0;
+
+}
+/*-- ALIGN IMAGES HORIZONTALLY --*/
+
+.imgsmall {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 20px;
+
+  
+  /*------------ TO CREATE A THREE COLUMN GRID REDUCE 375PX TO 250PX -----------*/  
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)) ; 
+  }
+
+
+
+/*----style nav----*/
+
+nav{
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background: #000;
+    padding: 2rem 0;
+    font-size: 0.8rem;
+
+}
+
+nav ul {
+    text-align: center;
+    text-transform:capitalize;
+    font-style: oblique;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+
+nav a:link {
+    color: #f7f7f7;
+}
+
+nav a:hover{
+    border-bottom: none;
+    color: #EDC101;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo{
+    font-size: 1.8rem;
+    text-align: center;
+    padding-right: 30vw;
+    font-family: 'DM Sans', sans-serif;
+}
+
+footer{
+    background-color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #f7f7f7;
+    padding: 4rem 0 3rem 0;
+    margin-top: 0rem;
+}
+footer p{
+    margin: 0 10rem;
+}
+
+footer a{ color:  #EDC101;}
+
+.connections{
+    position: relative;
+    margin: 0 auto;}
+.connections ul{
+    margin: 0;
+    padding: 0;}
+.connections li{
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;  }
+.connections a:link{
+        border-bottom: none;       }
+.connections img, .connections svg{
+    border: none;}
+.connections a:hover img, .connections a:hover svg{
+    border-bottom: none;}
+ .connections svg {
+    margin: 2rem auto;}
+.connections a:hover svg path {
+    fill: #f7f7f7;
+    transition: all 0.2s ease-in-out;}
+footer .connections a:hover svg path {
+    fill:  #EDC101;
+    transition: all 0.2s ease-in-out;}
+
+.dark{background: #EDC101;
+    color: #000;
+    margin: 0rem 0;
+    padding: 4rem 0;
+}
+
+.dark h2 {color:#f7f7f7;}
+
+/*---- ADDING MEDIA QUERIES FOR DIFFERERENT DEVICES----*/
+
+@media (max-width: 768px){
+
+article{
+    width:100%;
+    margin: auto;
+}
+
+header h2{
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {font-size: 3rem;
+    margin: 2rem 0 1rem 0;}
+
+}
+
+
